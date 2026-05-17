@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktirajte nas i rezervacije</title>
+</head>
+<body>
+    <p align="center">
+        <a href="../index.html">Početna</a> | 
+        <a href="o-nama.html">O nama</a> | 
+        <a href="program.html">Program</a> | 
+        <a href="galerija.html">Galerija</a> | 
+        <a href="kontakt.html">Kontakt</a>
+    </p>
+    <hr>
+    
+    <h2 align="center">Rezervišite svoje karte ili nam pošaljite pitanje</h2>
+    
+    <table width="85%" align="center" border="0" cellpadding="15">
+        <tr>
+            <td width="50%" valign="top">
+                <h3>Važne informacije o ulaznicama</h3>
+                <p>Sva mesta pod šatrom su podeljena po zonama (VIP, Parter, Tribine) i u potpunosti su numerisana. Deca do 3 godine starosti ne plaćaju ulaznicu ukoliko sede u krilu roditelja. Rezervacija karata putem ove forme važi najkasnije do 2 sata pre početka izabrane predstave, nakon čega se karte puštaju u slobodnu prodaju na biletarnici ispred šatre.</p>
+                
+                <h3>Kontakt podaci i lokacija kancelarije</h3>
+                <p><b>Adresa:</b> Bulevar Spektakla 45, Novi Sad / Šabac</p>
+                <p><b>Telefon za hitne informacije:</b> +381 21 555 666</p>
+                <p><b>Zvanični e-mail:</b> osnovevebtehnologija@gmail.com</p>
+                <p><b>Radno vreme biletarnice:</b> Svakog dana tokom turneje od 10:00 do 20:00 časova.</p>
+                
+                <br>
+                <img src="../resursi/slike/biletarnica.jpg" alt="Mesto gde se kupuju karte" width="380">
+            </td>
+            
+            <td width="50%" valign="top" bgcolor="#fcfcfc">
+                <h3>Online formular za upite</h3>
+                <form action="mailto:osnovevebtehnologija@gmail.com" method="post" enctype="text/plain">
+                    <label for="ime"><b>Ime i prezime posetioca:</b></label><br>
+                    <input type="text" id="ime" name="korisnik" size="35" required><br><br>
+
+                    <label for="email"><b>E-mail adresa za odgovor:</b></label><br>
+                    <input type="email" id="email" name="adresa" size="35" required><br><br>
+
+                    <label for="telefon"><b>Kontakt telefon:</b></label><br>
+                    <input type="tel" id="telefon" name="telefon_korisnika" size="35"><br><br>
+
+                    <label><b>Izaberite kategoriju sedišta:</b></label><br>
+                    <input type="radio" name="kategorija" value="vip"> VIP loža (prva 3 reda)<br>
+                    <input type="radio" name="kategorija" value="parter" checked> Klasik parter<br>
+                    <input type="radio" name="kategorija" value="tribine"> Bočne tribine<br><br>
+
+                    <label><b>Grad u kom želite da gledate predstavu:</b></label><br>
+                    <select name="grad">
+                        <option value="ns">Novi Sad</option>
+                        <option value="sa">Šabac</option>
+                        <option value="bg">Beograd</option>
+                        <option value="ni">Niš</option>
+                    </select><br><br>
+
+                    <label for="poruka"><b>Vaše pitanje ili detalji rezervacije (broj karata):</b></label><br>
+                    <textarea id="poruka" name="tekst" rows="6" cols="40" placeholder="Napišite koliko karata želite i za koji datum..."></textarea><br><br>
+
+                    <input type="checkbox" name="prijava" checked> Želim da primam obaveštenja o popustima na mejl<br><br>
+
+                    <input type="submit" value="Pošalji zvaničan zahtev">
+                    <input type="reset" value="Poništi unos">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
